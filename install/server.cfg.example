@@ -1,0 +1,12 @@
+# Keep your existing framework/dependency start order.
+# qbx_core, ox_inventory, ox_target, ox_lib and oxmysql must already be running.
+ensure laundry
+ensure bzzz_money
+ensure Wonkys_MoneyWash
+
+# OPTIONAL permanent placement permission for an existing admin group.
+# Your chosen player principal must already be assigned to group.admin.
+# add_ace group.admin wonkys.moneywash.admin allow
+
+# Alternative: SERVER console "washbzzzallow SERVER_ID" for a session-only grant.
+# Never grant placement permission to builtin.everyone.
